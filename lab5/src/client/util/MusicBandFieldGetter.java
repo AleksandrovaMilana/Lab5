@@ -1,7 +1,7 @@
 package client.util;
 
-import client.ConsoleReader;
-import client.ConsoleWriter;
+import client.io.ConsoleReader;
+import client.io.ConsoleWriter;
 
 public class MusicBandFieldGetter
 {
@@ -12,6 +12,44 @@ public class MusicBandFieldGetter
     {
         this.consoleReader = consoleReader;
         this.consoleWriter = consoleWriter;
+    }
+
+    public long getMusicBandId()
+    {
+        while (true) {
+            consoleWriter.printlnToOutputStream("Ведите id музыкальной группы:");
+            String idSting = consoleReader.getNextLine();
+            long id = 0;
+            try {
+                id = Long.parseLong(idSting);
+            }
+            catch (NumberFormatException numberFormatException)
+            {
+                consoleWriter.printlnToOutputStream("id должен быть целым числом");
+                continue;
+            }
+            if (FieldValidators.validateMusicBandId(id))
+                return id;
+        }
+    }
+
+    public int getMusicBandIndex()
+    {
+        while (true) {
+            consoleWriter.printlnToOutputStream("Ведите index музыкальной группы:");
+            String indexSting = consoleReader.getNextLine();
+            int index = 0;
+            try {
+                index = Integer.parseInt(indexSting);
+            }
+            catch (NumberFormatException numberFormatException)
+            {
+                consoleWriter.printlnToOutputStream("index должен быть целым числом");
+                continue;
+            }
+            if (FieldValidators.validateMusicBandIndex(index))
+                return index;
+        }
     }
 
     public String getMusicBandName()
