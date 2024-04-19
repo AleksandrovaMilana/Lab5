@@ -63,7 +63,7 @@ public class AddIfMaxCommandDTOBuilder implements CommandDTOBuilder {
                         !FieldValidators.validateMusicBandMusicGenre(musicBandMusicGenreString)
 
         ){
-            System.out.println("error");
+            System.out.println("При выполнении скрипта один из аргументов команды add_if_max не прошел валидацию. Скрипт не будет выполнен");
             throw new InvalidCommandArgumentsInScriptFileException();
         }
 

@@ -1,9 +1,7 @@
 package server.commandexecutors.concrete;
 
 import contract.dto.commanddto.CommandDTO;
-import contract.dto.commanddto.concrete.SortCommandDTO;
 import contract.dto.commandexecutionresultdto.CommandExecutionResultDTO;
-import contract.dto.commandexecutionresultdto.concrete.ClearCommandExecutionResultDTO;
 import contract.dto.commandexecutionresultdto.concrete.SortCommandExecutionResultDTO;
 import server.CollectionManager;
 import server.commandexecutors.CommandExecutor;

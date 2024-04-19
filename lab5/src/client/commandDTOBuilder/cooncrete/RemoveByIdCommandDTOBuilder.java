@@ -38,7 +38,7 @@ public class RemoveByIdCommandDTOBuilder implements CommandDTOBuilder {
                 !FieldValidators.validateMusicBandId(commandArgument.trim())
 
         ){
-            System.out.println("error");
+            System.out.println("При выполнении скрипта аргумент команды remove_by_id не прошел валидацию. Скрипт не будет выполнен");
             throw new InvalidCommandArgumentsInScriptFileException();
         }
 

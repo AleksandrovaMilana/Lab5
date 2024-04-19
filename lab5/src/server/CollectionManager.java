@@ -100,7 +100,7 @@ public class CollectionManager {
         musicBands.sort(new Comparator<MusicBand>() {
             @Override
             public int compare(MusicBand o1, MusicBand o2) {
-                return Math.toIntExact(o1.getId() - o2.getId());
+                return o1.compareTo(o2);
             }
         });
     }

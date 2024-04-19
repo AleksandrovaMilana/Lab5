@@ -17,13 +17,12 @@ import java.nio.charset.StandardCharsets;
 import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.LinkedList;
-import java.util.List;
 import java.util.Map;
 
 public class ServerInitializer {
     public static CollectionManager initializerCollectionManager() throws IOException {
 
-        //String initFileName = System.getenv("file_name");
+        //System.getenv("file_name");
         String initFileName = System.getProperty("user.dir") + File.separator + "collection.json";
 
         BufferedInputStream bufferedInputStream = new BufferedInputStream(

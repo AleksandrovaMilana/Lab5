@@ -57,7 +57,7 @@ public class ExecuteScriptCommandDTOBuilder implements CommandDTOBuilder
                 if (arguments.length == 0)
                 {
                     arguments = new String[1];
-                    arguments[0] = "ftd";
+                    arguments[0] = "0";
                 }
 
                 try {
@@ -132,7 +132,7 @@ public class ExecuteScriptCommandDTOBuilder implements CommandDTOBuilder
                 if (arguments.length == 0)
                 {
                     arguments = new String[1];
-                    arguments[0] = "mint";
+                    arguments[0] = "0";
                 }
                 if (this.commandDTOBuilders.get(commandName.trim()) == null)
                 {

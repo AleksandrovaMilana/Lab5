@@ -39,7 +39,7 @@ public class RemoveAtCommandDTOBuilder implements CommandDTOBuilder {
                 !FieldValidators.validateMusicBandIndex(commandArgument.trim())
 
         ){
-            System.out.println("error");
+            System.out.println("При выполнении скрипта аргумент команды remove_at не прошел валидацию. Скрипт не будет выполнен");
             throw new InvalidCommandArgumentsInScriptFileException();
         }
 

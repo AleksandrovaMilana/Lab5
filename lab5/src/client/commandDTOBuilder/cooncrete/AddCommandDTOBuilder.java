@@ -63,7 +63,7 @@ public class AddCommandDTOBuilder implements CommandDTOBuilder
                      !FieldValidators.validateMusicBandMusicGenre(musicBandMusicGenreString)
 
         ){
-            System.out.println("error");
+            System.out.println("При выполнении скрипта один из аргументов команды add не прошел валидацию. Скрипт не будет выполнен");
             throw new InvalidCommandArgumentsInScriptFileException();
         }
 
@@ -85,6 +85,5 @@ public class AddCommandDTOBuilder implements CommandDTOBuilder
                 musicBandMusicGenre);
     }
 
-
-
+    
 }
