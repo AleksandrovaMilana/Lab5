@@ -1,0 +1,43 @@
+execute_script file3.txt
+add
+Hj
+27
+27
+23
+26
+Hu
+BLUES
+execute_script file3.txt
+update 1
+Hj
+11
+27
+89
+26
+Hu
+BLUES
+execute_script file3.txt
+add_if_max
+Hj
+27
+27
+27
+26
+Hu
+BLUES
+sort
+sum_of_number_of_participants
+count_by_studio Hu
+remove_all_by_studio Hu
+info
+add_if_max
+Hj
+27
+27
+27
+26
+Hu
+BLUES
+sort
+sum_of_number_of_participants
+count_by_studio Hu

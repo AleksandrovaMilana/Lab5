@@ -1,0 +1,39 @@
+add
+Hj
+27
+27
+27
+26
+Hu
+BLUES
+update 1
+Hj
+11
+27
+89
+26
+Hu
+BLUES
+remove_by_id 1
+execute_script file2.txt
+info
+show
+save
+clear
+add
+Hj
+27
+27
+27
+26
+Hu
+BLUES
+add
+Hj
+27
+27
+27
+26
+Hu
+BLUES
+remove_at 1
